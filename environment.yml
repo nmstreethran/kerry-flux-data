@@ -1,0 +1,10 @@
+name: kerry-flux
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base
+  - r-essentials
+  - libgit2
+  - r-devtools
+  - jupyterlab
