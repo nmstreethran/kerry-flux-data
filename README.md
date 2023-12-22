@@ -18,4 +18,5 @@ Install R packages:
 
 ```r
 install.packages("REddyProc")
+install.packages("readmet")
 ```
