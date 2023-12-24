@@ -5,6 +5,4 @@ channels:
 dependencies:
   - r-base
   - r-essentials
-  - libgit2
-  - r-devtools
   - jupyterlab
