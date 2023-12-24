@@ -24,7 +24,7 @@ write.table(
 data_split <- split(data, (as.numeric(rownames(data)) - 1) %/% 1000000)
 
 # save each chunk as a new CSV file
-for (n in 1:length(data_split)) {
+for (n in seq_along(data_split)) {
   write.table(
     data_split[[n]],
     paste("TOA5_2806.", "ts_data.", sprintf("%02d", n), ".csv", sep = ""),

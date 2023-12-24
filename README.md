@@ -70,3 +70,8 @@ Text data looks like this:
 
 The first three datasets are TOB3 (Table Oriented Binary 3) files, while the last one is TOA5 (Table Oriented ASCII 5).
 Binary data can be viewed and converted into other formats using the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only) from Campbell Scientific.
+
+## Further reading
+
+References and links related to this topic can be found in this Zotero library:
+<https://www.zotero.org/groups/4706660/climag/collections/2ITV79EF>
