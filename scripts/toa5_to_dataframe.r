@@ -1,3 +1,5 @@
+install.packages("readmet")
+
 library("readmet")
 
 dat <- read.toa5("data/fluxes_201415/TOA5_2806.ts_data.dat")
