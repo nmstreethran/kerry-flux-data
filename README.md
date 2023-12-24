@@ -2,13 +2,15 @@
 
 Standardised flux data for IE-Kil (Killorglin - Glencar) in Co. Kerry, Ireland
 
-Latitude: 51.9683611, Longitude: -9.9003056
-
 Project: CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>)
 
 Existing standardised data for IE-Kil for the years 2002-2012 can be downloaded from the [European Fluxes Database Cluster](http://www.europe-fluxdata.eu).
 
 This repository details steps taken to standardise the remaining data (i.e. 2013-2016) to complete the archive in the European Fluxes Database.
+
+## Location
+
+Latitude: 51.9683611, Longitude: -9.9003056
 
 ## Virtual environment
 
@@ -30,13 +32,15 @@ install.packages("REddyProc")
 
 ## Input data formats
 
-View file contents:
+The input data (DAT files) come from Campbell Scientific dataloggers.
+
+To view a DAT file's contents:
 
 ```sh
 sed -n '1,10p' data.dat
 ```
 
-Binary data looks like this:
+If the DAT file is binary, the output looks like this:
 
 ```text
 "TOB3","1541","CR5000","1541","2.3","CPU:3D_LI_EB_DFnew.CR5","52197","2014-12-22 11:34:18"
@@ -53,7 +57,7 @@ Pd�.�@������:D)�@ݿbA3M�B�$A
                                                                                            C�D)��@߸9A5Y�B�$@���>�o���D)�@�.�A50]B�$@�K�?��>.�D)ܩ@ތVA4��B�$@p�>�?D�kD)��@�,�A5D�B�$@���>�1(>�E�D)�]@�$A3�B�$@����bN?�&�D)�@��
 ```
 
-Text data looks like this:
+If the DAT file is a text file, the output looks like this:
 
 ```text
 "TOA5","2806","CR1000","2806","CR1000.Std.06","CPU:3D_LI_TGA_VNOTDNEW.CR1","21445","ts_data"
@@ -68,8 +72,10 @@ Text data looks like this:
 "2014-12-22 11:47:39.8",761139398,0.5765,-0.9160001,1.22775,760.9031,8.796409,"NAN",12.12582,99.22072,0,11.70769,1.236716
 ```
 
-The first three datasets are TOB3 (Table Oriented Binary 3) files, while the last one is TOA5 (Table Oriented ASCII 5).
-Binary data can be viewed and converted into other formats using the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only) from Campbell Scientific.
+Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in TOA5 (Table Oriented ASCII 5) format.
+Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
+More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
+TOA5 files can then be processed just like any CSV or text file in R.
 
 ## Further reading
 
