@@ -1,3 +1,5 @@
+# process TOA5 data
+
 # TOA5_2806.ts_data.dat
 # split large (~28 mil rows, ~3 GB) TOA5 file into manageable
 # (max. 1 mil rows, ~110 MB) files
@@ -119,7 +121,7 @@ names(data) <- as.matrix(
 )
 
 write.table(
-  headers, "data/CSV/TOA5_3989.flux.csv", row.names = FALSE,
+  data, "data/CSV/TOA5_3989.flux.csv", row.names = FALSE,
   sep = ",", quote = FALSE
 )
 
@@ -148,7 +150,7 @@ names(data) <- as.matrix(
 )
 
 write.table(
-  headers, "data/CSV/TOA5_3989.2015.flux.csv", row.names = FALSE,
+  data, "data/CSV/TOA5_3989.2015.flux.csv", row.names = FALSE,
   sep = ",", quote = FALSE
 )
 
@@ -177,6 +179,6 @@ names(data) <- as.matrix(
 )
 
 write.table(
-  headers, "data/CSV/TOA5_3989.2016.flux.csv", row.names = FALSE,
+  data, "data/CSV/TOA5_3989.2016.flux.csv", row.names = FALSE,
   sep = ",", quote = FALSE
 )
