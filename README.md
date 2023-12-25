@@ -89,3 +89,7 @@ TOA5 files can then be processed just like any CSV or text file in R.
 
 References and links related to this topic can be found in this Zotero library:
 <https://www.zotero.org/groups/4706660/climag/collections/2ITV79EF>
+
+## Licence
+
+Scripts are licenced under the Apache License, Version 2.0.
