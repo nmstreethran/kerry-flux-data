@@ -1,4 +1,4 @@
-# process TOA5 data
+# process TOA5 10 Hz raw data
 
 # TOA5_2806.ts_data.dat
 # split large (~28 mil rows, ~3 GB) TOA5 file into manageable
@@ -102,83 +102,3 @@ for (n in seq_along(data_split)) {
     row.names = FALSE, sep = ",", quote = FALSE
   )
 }
-
-# TOA5_3989.flux.dat
-
-data <- read.csv("data/TOA5/TOA5_3989.flux.dat", skip = 4, header = FALSE)
-
-headers <- read.csv(
-  "data/TOA5/TOA5_3989.flux.dat", skip = 1, header = FALSE, nrows = 3
-)
-
-write.table(
-  headers, "data/CSV/TOA5_3989.flux.headers.csv", row.names = FALSE,
-  col.names = FALSE, sep = ",", quote = FALSE
-)
-
-names(data) <- as.matrix(
-  read.csv("data/TOA5/TOA5_3989.flux.dat", skip = 1, header = FALSE, nrows = 1)
-)
-
-write.table(
-  data, "data/CSV/TOA5_3989.flux.csv", row.names = FALSE,
-  sep = ",", quote = FALSE
-)
-
-# TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2015).dat
-
-data <- read.csv(
-  "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2015).dat",
-  skip = 4, header = FALSE
-)
-
-headers <- read.csv(
-  "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2015).dat",
-  skip = 1, header = FALSE, nrows = 3
-)
-
-write.table(
-  headers, "data/CSV/TOA5_3989.2015.flux.headers.csv", row.names = FALSE,
-  col.names = FALSE, sep = ",", quote = FALSE
-)
-
-names(data) <- as.matrix(
-  read.csv(
-    "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2015).dat",
-    skip = 1, header = FALSE, nrows = 1
-  )
-)
-
-write.table(
-  data, "data/CSV/TOA5_3989.2015.flux.csv", row.names = FALSE,
-  sep = ",", quote = FALSE
-)
-
-# TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2016).dat
-
-data <- read.csv(
-  "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2016).dat",
-  skip = 4, header = FALSE
-)
-
-headers <- read.csv(
-  "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2016).dat",
-  skip = 1, header = FALSE, nrows = 3
-)
-
-write.table(
-  headers, "data/CSV/TOA5_3989.2016.flux.headers.csv", row.names = FALSE,
-  col.names = FALSE, sep = ",", quote = FALSE
-)
-
-names(data) <- as.matrix(
-  read.csv(
-    "data/TOA5/TOA5_3989.flux (2021_09_17 14_49_19 UTC) (2016).dat",
-    skip = 1, header = FALSE, nrows = 1
-  )
-)
-
-write.table(
-  data, "data/CSV/TOA5_3989.2016.flux.csv", row.names = FALSE,
-  sep = ",", quote = FALSE
-)
