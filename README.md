@@ -20,6 +20,11 @@ IE-Kil (Killorglin)
 
 Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/SottocornolaThesis.2007.pdf)
 
+## Variables
+
+The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled or filtered but quality checked by the PIs.
+The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/obtaining-data/variables-and-formats).
+
 ## Virtual environment
 
 Set-up a Conda virtual environment:
@@ -80,10 +85,10 @@ If the DAT file is a text file, the output looks like this:
 "2014-12-22 11:47:39.8",761139398,0.5765,-0.9160001,1.22775,760.9031,8.796409,"NAN",12.12582,99.22072,0,11.70769,1.236716
 ```
 
-Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in TOA5 (Table Oriented ASCII 5) format.
+Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in the TOA5 (Table Oriented ASCII 5) format.
 Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
 More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
-TOA5 files can then be processed just like any CSV or text file in R.
+TOA5 files can then be processed just like any CSV file in R.
 
 ## Further reading
 
@@ -92,4 +97,4 @@ References and links related to this topic can be found in this Zotero library:
 
 ## Licence
 
-Scripts are licenced under the Apache License, Version 2.0.
+Scripts are licenced under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).

@@ -1,0 +1,103 @@
+ALB	Albedo 	%
+APAR	Absorbed PAR (400-700 nm)	umol m-2 s-1
+CH4	Methane concentration	ppb
+CO2	CO2 concentration 	ppm
+D_SNOW	Snow depth 	cm
+EVI	Enhanced Vegetation Index	nondimensional
+FC	CO2 flux 	umolCO2 m-2 s-1
+FC_CMB	NEE measured using transparent chambers	umolCO2 m-2 s-2
+FC_SSITC_TEST	Quality check - CO2 flux (0=high, 1=medium, 2=low quality)	nondimensional
+FCH4	Methane (CH4) flux	nmol m-2 s-1
+FCH4_CMB	Methane flux measured using chambers	nmol m-2 s-1
+FETCH_70	Fetch at which footprint cumulated probability is 70%	m
+FETCH_90	Fetch at which footprint cumulated probability is 90%	m
+FETCH_FILTER	Quality check -footprint (0=Fetch70 outside target area; 1=can be used, 0=measurement with footprint contaminations)	nondimensional
+FETCH_MAX	Fetch at which footprint cumulated probability is maximum 	m
+FH2O	Water vapor (H2O) turbulent flux (no storage correction)	mmolH2O m-2 s-1
+FN2O	Nitrous oxide (N2O) flux 	nmol m-2 s-1
+FN2O_CMB	Nitrous oxide flux measured using chambers	nmol m-2 s-1
+FNO	Nitric oxide (NO) flux 	nmol m-2 s-1
+FNO_CMB	NO flux measured using chambers	nmol m-2 s-1
+FNO2	Nitrogen dioxide (NO2) flux 	nmol m-2 s-1
+FNO2_CMB	NO2 flux measured using chambers	nmol m-2 s-1
+FO3	Ozone (O3) flux 	nmol m-2 s-1
+G	Soil heat flux 	W m-2
+H	Sensible heat flux	W m-2
+H_SSITC_TEST	Quality check - sensible heat flux (0=high, 1=medium, 2=low quality)	nondimensional
+H2O	Water (H2O) vapor mole fraction	mmolH2O mol-1
+LE	Latent heat flux 	W m-2
+LE_SSITC_TEST	Quality check - latent heat flux (0=high, 1=medium, 2=low quality)	nondimensional
+LEAF_WET	Leaf wetness	%
+LW_IN	Incoming Longwave radiation (in the range from 4 to 50 micron)	W m-2
+LW_OUT	Outgoing Longwave radiation (in the range from 4 to 50 micron)	W m-2
+MCRI	Carotenoid Reflectance Index (Gitelson et al., 2002)	nondimensional
+MO_LENGTH	Monin-Obhukov length 	m
+MTCI	Meris Terrestrial Chlorophyll Index (Dash and Curran, 2004)	nondimensional
+NDVI	Normalized Difference Vegetation Index 	nondimensional
+NEE_PI	Net Ecosystem Exchange submitted by PI 	umolCO2 m-2 s-1
+NETRAD	Net radiation (including SW and LW components)	W m-2
+NIRV	Near Infrared Vegetation Index (Badgley et al., 2017)	W m-2 sr-1 nm-1
+NO	NO concentration 	ppb
+NO2	NO2 concentration 	ppb
+O3	O3concentration 	ppb
+P	Precipitation 	mm
+P_RAIN	Rainfall	mm
+P_SNOW	Snowfall – snow precipitation	mm (or water)
+PA	Atmospheric pressure 	Kpa
+PPFD_BC_IN	Below canopy PPFD (400-700 nm)	umol m-2 s-1
+PPFD_DIF	Diffuse incoming PPFD (400-700 nm)	umol m-2 s-1
+PPFD_DIR	Photosynthetic photon flux density, direct incoming	µmol m-2 s-1
+PPFD_IN	Photosynthetic Photon Flux Density (400-700 nm)	umol m-2 s-1
+PPFD_OUT	Reflected PPFD (400-700 nm)	umol m-2 s-1
+PRI	Photochemical Reflectance Index 	nondimensional
+R_UVA	UVA radiation 	W m-2
+R_UVB	UVB radiation 	W m-2
+REDCl	Red Edge Chlorophyll Index	nondimensional
+REP	Red Edge Position (Dash and Curran, 2004)	nm
+RH	Relative humidity 	%
+RHET	Heterotrophic respiration flux 	umolCO2 m-2 s-1
+RS	Soil CO2 efflux 	umolCO2 m-2 s-1
+RUNOFF	Runoff	mm
+SAP_DT	Difference of probes temperature for sapflow measurements	°C
+SAP_FLOW	Sapflow	mmolH2O m-2 s-1
+SB	Heat storage in biomass	W m-2
+SC	CO2 storage flux	umolCO2 m-2 s-1
+SCH4	Methane (CH4) storage flux	nmolCH4 m-2 s-1
+SG	Heat storage in the soil above the soil heat fluxes measurement	W m-2
+SH	Sensible heat storage flux	W m-2
+SLE	Latent heat storage flux	W m-2
+SPEC_NIR_IN	incoming radiation (infra-red band)	W m-2 nm-1
+SPEC_NIR_OUT	outgoing radiation (infra-red band)	W m-2 sr-1 nm-1
+SPEC_PRI_REF_IN	incoming radiation at 568 nm 	W m-2 nm-1
+SPEC_PRI_REF_OUT	outgoing radiation at 568 nm 	W m-2 sr-1 nm-1
+SPEC_PRI_TGT_IN	incoming radiation at 529 nm 	W m-2 nm-1
+SPEC_PRI_TGT_OUT	outgoing radiation at 529 nm 	W m-2 sr-1 nm-1
+SPEC_RED_IN	incoming radiation (red band)	W m-2 nm-1
+SPEC_RED_OUT	outgoing radiation (red band)	W m-2 sr-1 nm-1
+SR	Simple Ratio	nondimensional
+STEMFLOW	Stemflow 	mm
+SW_BC_IN	Below canopy incoming short wave radiation	W m-2
+SW_DIF	Diffuse incoming Shortwave radiation (in the range from 0.3 to 4.5 micron)	W m-2
+SW_IN	Incoming Shortwave radiation (in the range from 0.3 to 4.5 micron)	W m-2
+SW_OUT	Outgoing Shortwave radiation (in the range from 0.3 to 4.5 micron)	W m-2
+SWC	Soil water content	%
+T_BOLE	Bole temperature	°C
+T_CANOPY	Canopy temperature	°C
+TA	Air temperature 	°C
+TAU	Momentum flux 	Kg m-1 s-2
+TAU_SSITC_TEST	Quality check - momentum flux (0=high, 1=medium, 2=low quality)	nondimensional
+TBC	Temperature below canopy 	°C
+TCARI	Transformed Chlorophyll Absorption in Reflectance Index	nondimensional
+THROUGHFALL	Throughfall 	mm
+TR	Tree transpiration	ml hr-1
+TS	Soil temperature	°C
+U_SIGMA	Standard deviation of velocity fluctuations (towards main-wind direction after coordinates rotation)	m s-1
+USTAR	Friction velocity	m s-1
+V_SIGMA	Standard deviation of lateral velocity fluctuations (cross main-wind direction after coordinates rotation)	m s-1
+W_SIGMA	Standard deviation of vertical velocity fluctuations 	m s-1
+WD	Wind direction	Decimal degree
+WD_SIGMA	Standard deviation of wind direction (Yamartino, 1984)	decimal degree
+WS	Wind speed 	m s-1
+WS_MAX	Maximum wind speed 	m s-1
+WTD	Water table depth 	m
+ZL	Stability parameter 	nondimensional
