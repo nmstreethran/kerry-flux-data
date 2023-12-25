@@ -22,8 +22,9 @@ Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/Sott
 
 ## Variables
 
-The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled or filtered but quality checked by the PIs.
+The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled, or filtered but quality checked by the PIs.
 The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/obtaining-data/variables-and-formats).
+They have also been copied into a TSV file in the `data` folder.
 
 ## Virtual environment
 
@@ -88,7 +89,7 @@ If the DAT file is a text file, the output looks like this:
 Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in the TOA5 (Table Oriented ASCII 5) format.
 Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
 More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
-TOA5 files can then be processed just like any CSV file in R.
+TOA5 files can then be processed just like any other CSV file in R.
 
 ## Further reading
 

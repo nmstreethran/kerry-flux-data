@@ -1,3 +1,4 @@
+Variables	Description	Unit
 ALB	Albedo 	%
 APAR	Absorbed PAR (400-700 nm)	umol m-2 s-1
 CH4	Methane concentration	ppb
