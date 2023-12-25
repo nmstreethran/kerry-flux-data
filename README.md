@@ -1,8 +1,6 @@
 # Kerry Flux Data
 
-Standardised flux data for IE-Kil (Killorglin - Glencar) in Co. Kerry, Ireland
-
-Project: CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>)
+Standardised flux data for IE-Kil (Killorglin - Glencar) in Co. Kerry, Ireland collected during the CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>) project.
 
 Existing standardised data for IE-Kil for the years 2002-2012 can be downloaded from the [European Fluxes Database Cluster](http://www.europe-fluxdata.eu).
 
@@ -10,7 +8,17 @@ This repository details steps taken to standardise the remaining data (i.e. 2013
 
 ## Location
 
-Latitude: 51.9683611, Longitude: -9.9003056
+IE-Kil (Killorglin)
+
+- An Atlantic blanket bog
+- Located near Glencar, Co. Kerry, in south-west Ireland
+- Latitude: 51.9683611, Longitude: -9.9003056
+- Area: ~450 ha
+- Lies on sandstone bedrock
+- Located in a valley at an elevation 145-170 m above sea level
+- Composed of a large central pristine part (~220 ha), surrounded by disturbed peatland areas
+
+Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/SottocornolaThesis.2007.pdf)
 
 ## Virtual environment
 
@@ -34,10 +42,10 @@ install.packages("REddyProc")
 
 The input data (DAT files) come from Campbell Scientific dataloggers.
 
-To view a DAT file's contents:
+To view a DAT file's contents (first 10 lines):
 
 ```sh
-sed -n '1,10p' data.dat
+sed -n '1,10p' 'file.dat'
 ```
 
 If the DAT file is binary, the output looks like this:
