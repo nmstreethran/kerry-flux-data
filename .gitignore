@@ -1,3 +1,3 @@
 data/*
 .*^
-!europe_fluxdata_variables_description_L2.tsv
+!*.tsv
