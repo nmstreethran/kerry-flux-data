@@ -1,14 +1,14 @@
 # Kerry Flux Data
 
-Standardised flux data for IE-Kil (Killorglin - Glencar) in Co. Kerry, Ireland collected during the CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>) project.
+Standardised flux data for the IE-Kil (Killorglin - Glencar) site in Co. Kerry, Ireland collected during the CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>) project.
 
 Existing standardised data for IE-Kil for the years 2002-2012 can be downloaded from the [European Fluxes Database Cluster](http://www.europe-fluxdata.eu).
 
 This repository details steps taken to standardise the remaining data (i.e. 2013-2016) to complete the archive in the European Fluxes Database.
 
-## Location
+## Site details
 
-IE-Kil (Killorglin)
+[IE-Kil (Killorglin)](http://www.europe-fluxdata.eu/home/site-details?id=IE-Kil)
 
 - An Atlantic blanket bog
 - Located near Glencar, Co. Kerry, in south-west Ireland
@@ -27,7 +27,7 @@ The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/ob
 They are also listed in a [TSV file](data/europe_fluxdata_variables.tsv) in the `data` folder.
 
 Variables for the [raw data](data/ts_data_variables.tsv) and [flux data](data/flux_variables.tsv) are also available in the `data` folder.
-These have been compiled from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
+These have been compiled from the data headers with additional descriptions from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
 
 ## Virtual environment
 
@@ -47,9 +47,9 @@ Install R packages:
 install.packages("REddyProc")
 ```
 
-## Input data formats
+## Raw and flux data formats
 
-The input data (DAT files) come from Campbell Scientific dataloggers.
+The input data (DAT files) come from Campbell Scientific dataloggers and other instruments.
 
 To view a DAT file's contents (first 10 lines):
 
@@ -57,7 +57,7 @@ To view a DAT file's contents (first 10 lines):
 sed -n '1,10p' 'file.dat'
 ```
 
-If the DAT file is binary, the output looks like this:
+If the DAT file is binary, the output looks something like this:
 
 ```text
 "TOB3","1541","CR5000","1541","2.3","CPU:3D_LI_EB_DFnew.CR5","52197","2014-12-22 11:34:18"
@@ -74,7 +74,7 @@ Pd�.�@������:D)�@ݿbA3M�B�$A
                                                                                            C�D)��@߸9A5Y�B�$@���>�o���D)�@�.�A50]B�$@�K�?��>.�D)ܩ@ތVA4��B�$@p�>�?D�kD)��@�,�A5D�B�$@���>�1(>�E�D)�]@�$A3�B�$@����bN?�&�D)�@��
 ```
 
-If the DAT file is a text file, the output looks like this:
+If the DAT file is a text file, the output looks something like this:
 
 ```text
 "TOA5","2806","CR1000","2806","CR1000.Std.06","CPU:3D_LI_TGA_VNOTDNEW.CR1","21445","ts_data"
@@ -92,7 +92,7 @@ If the DAT file is a text file, the output looks like this:
 Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in the TOA5 (Table Oriented ASCII 5) format.
 Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
 More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
-TOA5 files can then be processed just like any other CSV file in R.
+TOA5 files can be processed just like any other CSV file in R.
 
 ## Further reading
 
