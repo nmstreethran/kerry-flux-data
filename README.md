@@ -22,7 +22,7 @@ Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/Sott
 
 ## Variables
 
-The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled, or filtered but quality checked by the PIs.
+The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled or filtered but quality checked by the PIs.
 The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/obtaining-data/variables-and-formats).
 They have also been copied into a TSV file in the `data` folder.
 
