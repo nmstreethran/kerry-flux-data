@@ -1,14 +1,15 @@
-co2	mg/(m^3)	Smp
-diag_csat	unitless	Smp
-diag_irga	unitless	Smp
-e_hmp	kPa	Smp
-h2o	g/(m^3)	Smp
-n2o	umol/mol	Smp
-press	kPa	Smp
-RECORD	RN	
-t_hmp	C	Smp
-TIMESTAMP	TS	
-Ts	C	Smp
-Ux	m/s	Smp
-Uy	m/s	Smp
-Uz	m/s	Smp
+Variable	Unit	Type	Description
+co2	mg/(m^3)	Smp	LI-7500 carbon dioxide mass density
+diag_csat	unitless	Smp	CSAT3 diagnostic word
+diag_irga	unitless	Smp	
+e_hmp	kPa	Smp	HMP45C vapour pressure
+h2o	g/(m^3)	Smp	LI-7500 water vapour mass density
+n2o	umol/mol	Smp	
+press	kPa	Smp	LI-7500 system pressure
+RECORD	RN		Record number from the starting date
+t_hmp	C	Smp	HMP45C temperature
+TIMESTAMP	TS		Sampling time in format YYYY-MM-dd hh:mm:ss
+Ts	C	Smp	Sonic temperature
+Ux	m/s	Smp	Horizontal wind in the x-axis (sonic coordinate system)
+Uy	m/s	Smp	Horizontal wind in the y-axis (sonic coordinate system)
+Uz	m/s	Smp	Vertical wind (sonic coordinate system)
