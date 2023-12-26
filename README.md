@@ -24,7 +24,10 @@ Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/Sott
 
 The IE-Kil data already archived on the European Fluxes Database Cluster are Level 2 data, i.e. data provided by the PIs, half-hourly, not gap-filled or filtered but quality checked by the PIs.
 The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/obtaining-data/variables-and-formats).
-They have also been copied into a TSV file in the `data` folder.
+They are also listed in a [TSV file](data/europe_fluxdata_variables.tsv) in the `data` folder.
+
+Variables for the [raw data](data/ts_data_variables.tsv) and [flux data](data/flux_variables.tsv) are also available in the `data` folder.
+These have been compiled from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
 
 ## Virtual environment
 
