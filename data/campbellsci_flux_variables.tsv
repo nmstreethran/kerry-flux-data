@@ -1,0 +1,54 @@
+TIMESTAMP	TS
+RECORD	RN	
+Fc_wpl	mg/(m^2 s)	Smp
+LE_wpl	W/m^2	Smp
+Hs	W/m^2	Smp
+Hc	W/m^2	Smp
+tau	kg/(m s^2)	Smp
+u_star	m/s	Smp
+stdev_Ts	C	Smp
+cov_Ts_Ux	m C/s	Smp
+cov_Ts_Uy	m C/s	Smp
+cov_Ts_Uz	m C/s	Smp
+stdev_Ux	m/s	Smp
+cov_Ux_Uy	(m/s)^2	Smp
+cov_Ux_Uz	(m/s)^2	Smp
+stdev_Uy	m/s	Smp
+cov_Uy_Uz	(m/s)^2	Smp
+stdev_Uz	m/s	Smp
+stdev_co2	mg/m^3	Smp
+cov_co2_Ux	mg/(m^2 s)	Smp
+cov_co2_Uy	mg/(m^2 s)	Smp
+cov_co2_Uz	mg/(m^2 s)	Smp
+stdev_h2o	g/m^3	Smp
+cov_h2o_Ux	g/(m^2 s)	Smp
+cov_h2o_Uy	g/(m^2 s)	Smp
+cov_h2o_Uz	g/(m^2 s)	Smp
+Ts_mean	C	Smp
+Ux_Avg	m/s	Avg
+Uy_Avg	m/s	Avg
+Uz_Avg	m/s	Avg
+co2_mean	mg/m^3	Smp
+h2o_Avg	g/m^3	Avg
+rho_a_mean	kg/m^3	Smp
+press_mean	kPa	Smp
+panel_temp_Avg	C	Avg
+wind_dir	degrees	Smp
+rslt_wnd_spd	m/s	Smp
+std_wnd_dir	degrees	Smp
+batt_volt_Avg	V	Avg
+irga_warnings	samples	Tot
+chopper_f_Tot	samples	Tot
+detector_f_Tot	samples	Tot
+pll_f_Tot	samples	Tot
+sync_f_Tot	samples	Tot
+agc_Avg	unitless	Avg
+Fc_irga	mg/(m^2 s)	Smp
+LE_irga	W/m^2	Smp
+co2_wpl_LE	mg/(m^2 s)	Smp
+co2_wpl_H	mg/(m^2 s)	Smp
+h2o_wpl_LE	W/m^2	Smp
+h2o_wpl_H	W/m^2	Smp
+h2o_hmp_mean	g/m^3	Smp
+t_hmp_mean	C	Smp
+rh_hmp_mean	percent	Smp

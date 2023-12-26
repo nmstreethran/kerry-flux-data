@@ -1,0 +1,14 @@
+co2	mg/(m^3)	Smp
+diag_csat	unitless	Smp
+diag_irga	unitless	Smp
+e_hmp	kPa	Smp
+h2o	g/(m^3)	Smp
+n2o	umol/mol	Smp
+press	kPa	Smp
+RECORD	RN	
+t_hmp	C	Smp
+TIMESTAMP	TS	
+Ts	C	Smp
+Ux	m/s	Smp
+Uy	m/s	Smp
+Uz	m/s	Smp
