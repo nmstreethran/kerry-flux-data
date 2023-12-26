@@ -43,7 +43,7 @@ NO2	NO2 concentration	ppb
 O3	O3 concentration	ppb
 P	Precipitation	mm
 P_RAIN	Rainfall	mm
-P_SNOW	Snowfall – snow precipitation	mm (of water)
+P_SNOW	Snowfall - snow precipitation	mm (of water)
 PA	Atmospheric pressure	kPa
 PPFD_BC_IN	Below canopy PPFD (400-700 nm)	µmol m-2 s-1
 PPFD_DIF	Diffuse incoming PPFD (400-700 nm)	µmol m-2 s-1

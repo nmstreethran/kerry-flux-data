@@ -1,41 +1,41 @@
 Variable	Unit	Type	Description
 TIMESTAMP	TS		Sampling time in format YYYY-MM-dd hh:mm:ss
 RECORD	RN		Record number from the starting date
-Fc_wpl	mg/(m^2 s)	Smp	Carbon dioxide flux, with Webb et al. term
-LE_wpl	W/m^2	Smp	Latent heat flux, with Webb et al. term
-Hs	W/m^2	Smp	Sensible heat flux using sonic temperature
-Hc	W/m^2	Smp	Sensible heat flux calculated from Hs and LE wpl
-tau	kg/(m s^2)	Smp	Momentum flux
-u_star	m/s	Smp	Friction velocity
-stdev_Ts	C	Smp	Standard deviation of sonic temperature
-cov_Ts_Ux	m C/s	Smp	Covariance of sonic temperature and horizontal wind (x-axis)
-cov_Ts_Uy	m C/s	Smp	Covariance of sonic temperature and horizontal wind (y-axis)
-cov_Ts_Uz	m C/s	Smp	Covariance of sonic temperature and vertical wind
-stdev_Ux	m/s	Smp	Standard deviation of horizontal wind (x-axis)
-cov_Ux_Uy	(m/s)^2	Smp	Covariance of horizontal winds (x-axis and y-axis)
-cov_Ux_Uz	(m/s)^2	Smp	Covariance of horizontal wind (x-axis) and vertical wind
-stdev_Uy	m/s	Smp	Standard deviation of horizontal wind (y-axis)
-cov_Uy_Uz	(m/s)^2	Smp	Covariance of horizontal wind (y-axis) and vertical wind
-stdev_Uz	m/s	Smp	Standard deviation of vertical wind
-stdev_co2	mg/m^3	Smp	Standard deviation carbon dioxide density
-cov_co2_Ux	mg/(m^2 s)	Smp	Covariance of carbon dioxide density and horizontal wind (x-axis)
-cov_co2_Uy	mg/(m^2 s)	Smp	Covariance of carbon dioxide density and horizontal wind (y-axis)
-cov_co2_Uz	mg/(m^2 s)	Smp	Covariance of carbon dioxide density and vertical wind
-stdev_h2o	g/m^3	Smp	Standard deviation of water vapour density
-cov_h2o_Ux	g/(m^2 s)	Smp	Covariance of water vapour density and horizontal wind (x-axis)
-cov_h2o_Uy	g/(m^2 s)	Smp	Covariance of water vapour density and horizontal wind (y-axis)
-cov_h2o_Uz	g/(m^2 s)	Smp	Covariance of water vapour density and vertical wind
-Ts_mean	C	Smp	Average sonic temperature
-Ux_Avg	m/s	Avg	Average horizontal wind (x-axis)
-Uy_Avg	m/s	Avg	Average horizontal wind (y-axis)
-Uz_Avg	m/s	Avg	Average vertical wind
-co2_mean	mg/m^3	Smp	Average carbon dioxide density
-h2o_Avg	g/m^3	Avg	Average water vapour density
-rho_a_mean	kg/m^3	Smp	Average air density
+Fc_wpl	mg m-2 s-1	Smp	Carbon dioxide flux, with Webb et al. term
+LE_wpl	W m-2	Smp	Latent heat flux, with Webb et al. term
+Hs	W m-2	Smp	Sensible heat flux using sonic temperature
+Hc	W m-2	Smp	Sensible heat flux calculated from Hs and LE wpl
+tau	kg m-1 s-2	Smp	Momentum flux
+u_star	m s-1	Smp	Friction velocity
+stdev_Ts	°C	Smp	Standard deviation of sonic temperature
+cov_Ts_Ux	°C m s-1	Smp	Covariance of sonic temperature and horizontal wind (x-axis)
+cov_Ts_Uy	°C m s-1	Smp	Covariance of sonic temperature and horizontal wind (y-axis)
+cov_Ts_Uz	°C m s-1	Smp	Covariance of sonic temperature and vertical wind
+stdev_Ux	m s-1	Smp	Standard deviation of horizontal wind (x-axis)
+cov_Ux_Uy	m2 s-2	Smp	Covariance of horizontal winds (x-axis and y-axis)
+cov_Ux_Uz	m2 s-2	Smp	Covariance of horizontal wind (x-axis) and vertical wind
+stdev_Uy	m s-1	Smp	Standard deviation of horizontal wind (y-axis)
+cov_Uy_Uz	m2 s-2	Smp	Covariance of horizontal wind (y-axis) and vertical wind
+stdev_Uz	m s-1	Smp	Standard deviation of vertical wind
+stdev_co2	mg m-3	Smp	Standard deviation carbon dioxide density
+cov_co2_Ux	mg m-2 s-1	Smp	Covariance of carbon dioxide density and horizontal wind (x-axis)
+cov_co2_Uy	mg m-2 s-1	Smp	Covariance of carbon dioxide density and horizontal wind (y-axis)
+cov_co2_Uz	mg m-2 s-1	Smp	Covariance of carbon dioxide density and vertical wind
+stdev_h2o	g m-3	Smp	Standard deviation of water vapour density
+cov_h2o_Ux	g m-2 s-1	Smp	Covariance of water vapour density and horizontal wind (x-axis)
+cov_h2o_Uy	g m-2 s-1	Smp	Covariance of water vapour density and horizontal wind (y-axis)
+cov_h2o_Uz	g m-2 s-1	Smp	Covariance of water vapour density and vertical wind
+Ts_mean	°C	Smp	Average sonic temperature
+Ux_Avg	m s-1	Avg	Average horizontal wind (x-axis)
+Uy_Avg	m s-1	Avg	Average horizontal wind (y-axis)
+Uz_Avg	m s-1	Avg	Average vertical wind
+co2_mean	mg m-3	Smp	Average carbon dioxide density
+h2o_Avg	g m-3	Avg	Average water vapour density
+rho_a_mean	kg m-3	Smp	Average air density
 press_mean	kPa	Smp	Average barometric pressure
-panel_temp_Avg	C	Avg	Average datalogger panel temperature
-wind_dir	degrees	Smp
-rslt_wnd_spd	m/s	Smp	Resultant horizontal wind speed
+panel_temp_Avg	°C	Avg	Average datalogger panel temperature
+wind_dir	degrees	Smp	
+rslt_wnd_spd	m s-1	Smp	Resultant horizontal wind speed
 std_wnd_dir	degrees	Smp	Standard deviation of wind direction
 batt_volt_Avg	V	Avg	Average battery voltage
 irga_warnings	samples	Tot	Number of times any LI-7500 warning flag was set high
@@ -44,12 +44,12 @@ detector_f_Tot	samples	Tot	Number of chopper detector from LI-7500
 pll_f_Tot	samples	Tot	Number of chopper pll from LI-7500
 sync_f_Tot	samples	Tot	Number of chopper synchronization warnings from LI-7500
 agc_Avg	unitless	Avg	Average AGC from LI-7500
-Fc_irga	mg/(m^2 s)	Smp	Carbon dioxide flux without the Webb et al. term
-LE_irga	W/m^2	Smp	Latent heat flux without the Webb et al. term
-co2_wpl_LE	mg/(m^2 s)	Smp	Carbon dioxide Webb et al. term due to latent heat flux
-co2_wpl_H	mg/(m^2 s)	Smp	Carbon dioxide Webb et al. term due to (sonic) sensible heat flux
-h2o_wpl_LE	W/m^2	Smp	Water vapour Webb et al. term due to latent heat flux
-h2o_wpl_H	W/m^2	Smp	Water vapour Webb et al. term due to (sonic) sensible heat flux
-h2o_hmp_mean	g/m^3	Smp	Average water vapour density from HMP45C
-t_hmp_mean	C	Smp	Average temperature from HMP45C
+Fc_irga	mg m-2 s-1	Smp	Carbon dioxide flux without the Webb et al. term
+LE_irga	W m-2	Smp	Latent heat flux without the Webb et al. term
+co2_wpl_LE	mg m-2 s-1	Smp	Carbon dioxide Webb et al. term due to latent heat flux
+co2_wpl_H	mg m-2 s-1	Smp	Carbon dioxide Webb et al. term due to (sonic) sensible heat flux
+h2o_wpl_LE	W m-2	Smp	Water vapour Webb et al. term due to latent heat flux
+h2o_wpl_H	W m-2	Smp	Water vapour Webb et al. term due to (sonic) sensible heat flux
+h2o_hmp_mean	g m-3	Smp	Average water vapour density from HMP45C
+t_hmp_mean	°C	Smp	Average temperature from HMP45C
 rh_hmp_mean	percent	Smp	Average relative humidity from HMP45C
