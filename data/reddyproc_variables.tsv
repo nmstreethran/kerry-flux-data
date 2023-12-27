@@ -1,0 +1,18 @@
+Variable	Type	Description	Units	BGC	Qualifier
+DOY	NA	NA	NA	DoY	NA
+H_F	HEAT	Sensible heat turbulent flux (no storage correction)	W m-2	H_f	Gap-filled variable
+H_PI	HEAT	Sensible heat turbulent flux (no storage correction)	W m-2	H_orig	Provided by PI
+H_QC	HEAT	Sensible heat turbulent flux (no storage correction)	W m-2	H_fqc	Quality control flag
+LE_F	HEAT	Latent heat turbulent flux (no storage correction)	W m-2	LE_f	Gap-filled variable
+LE_PI	HEAT	Latent heat turbulent flux (no storage correction)	W m-2	LE_orig	Provided by PI
+LE_QC	HEAT	Latent heat turbulent flux (no storage correction)	W m-2	LE_fqc	Quality control flag
+NEE_F	PRODUCTS	Net Ecosystem Exchange	µmolCO2 m-2 s-1	NEE_f	Gap-filled variable
+NEE_PI	PRODUCTS	Net Ecosystem Exchange	µmolCO2 m-2 s-1	NEE_orig	Provided by PI
+NEE_QC	PRODUCTS	Net Ecosystem Exchange	µmolCO2 m-2 s-1	NEE_fqc	Quality control flag
+RH	MET_ATM	Relative humidity, range 0-100	%	rH	NA
+SW_IN	MET_RAD	Shortwave radiation, incoming	W m-2	Rg	NA
+TA	MET_ATM	Air temperature	deg C	Tair	NA
+TS	MET_SOIL	Soil temperature	deg C	Tsoil	NA
+USTAR	MET_WIND	Friction velocity	m s-1	Ustar	NA
+VPD	MET_ATM	Vapor Pressure Deficit	hPa	VPD	NA
+YEAR	NA	NA	NA	Year	NA

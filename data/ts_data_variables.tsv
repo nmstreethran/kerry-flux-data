@@ -1,4 +1,4 @@
-Variable	Unit	Type	Description
+Variable	Units	Type	Description
 co2	mg m-3	Smp	LI-7500 carbon dioxide mass density
 diag_csat	unitless	Smp	CSAT3 diagnostic word
 diag_irga	unitless	Smp	

@@ -1,4 +1,4 @@
-Variable	Unit	Type	Description
+Variable	Units	Type	Description
 TIMESTAMP	TS		Sampling time in format YYYY-MM-dd hh:mm:ss
 RECORD	RN		Record number from the starting date
 Fc_wpl	mg m-2 s-1	Smp	Carbon dioxide flux, with Webb et al. term
