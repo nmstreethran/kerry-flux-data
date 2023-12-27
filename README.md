@@ -32,6 +32,8 @@ Variables for the [raw data](data/ts_data_variables.tsv) and [flux data](data/fl
 These have been compiled from the data headers with additional descriptions from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
 A number of these variables cite [Webb et al. (1980)](https://doi.org/10.1002/qj.49710644707).
 
+Variables used in the REddyProc R package are listed in another [TSV file](data/reddyproc_ameriflux_bgc_variables.tsv) and are mapped to [AmeriFlux variables](https://ameriflux.lbl.gov/data/aboutdata/data-variables/).
+
 ## Virtual environment
 
 Set-up a Conda virtual environment:
