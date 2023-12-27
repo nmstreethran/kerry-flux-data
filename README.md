@@ -17,6 +17,8 @@ This repository details steps taken to standardise the remaining data (i.e. 2013
 - Lies on sandstone bedrock
 - Located in a valley at an elevation 145-170 m above sea level
 - Composed of a large central pristine part (~220 ha), surrounded by disturbed peatland areas
+- Instruments: Campbell Scientific dataloggers, ...
+- Status: ...
 
 Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/SottocornolaThesis.2007.pdf)
 
@@ -28,6 +30,7 @@ They are also listed in a [TSV file](data/europe_fluxdata_variables.tsv) in the 
 
 Variables for the [raw data](data/ts_data_variables.tsv) and [flux data](data/flux_variables.tsv) are also available in the `data` folder.
 These have been compiled from the data headers with additional descriptions from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
+A number of these variables cite [Webb et al. (1980)](https://doi.org/10.1002/qj.49710644707).
 
 ## Virtual environment
 
@@ -49,7 +52,7 @@ install.packages("REddyProc")
 
 ## Raw and flux data formats
 
-The input data (DAT files) come from Campbell Scientific dataloggers and other instruments.
+The data (DAT) files come from Campbell Scientific dataloggers.
 
 To view a DAT file's contents (first 10 lines):
 
