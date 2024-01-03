@@ -1,14 +1,14 @@
 # Kerry Flux Data
 
-Standardised flux data for the IE-Kil (Killorglin - Glencar) site in Co. Kerry, Ireland collected during the CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>) project.
+Standardised flux data for the [IE-Kil](http://www.europe-fluxdata.eu/home/site-details?id=IE-Kil) (Killorglin - Glencar) site in Co. Kerry, Ireland collected during the CarboEuropeIP (EU-FP6) (<http://carboeurope.org/ceip/>) project.
 
 Existing standardised data for IE-Kil for the years 2002-2012 can be downloaded from the [European Fluxes Database Cluster](http://www.europe-fluxdata.eu).
 
-This repository details steps taken to standardise the remaining data (i.e. 2013-2016) to complete the archive in the European Fluxes Database.
+This repository details steps taken to standardise the remaining data (i.e. 2012-2016) to complete the archive in the European Fluxes Database.
 
 ## Site details
 
-[IE-Kil (Killorglin)](http://www.europe-fluxdata.eu/home/site-details?id=IE-Kil)
+IE-Kil (Killorglin)
 
 - An Atlantic blanket bog
 - Located near Glencar, Co. Kerry, in south-west Ireland
