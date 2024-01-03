@@ -34,24 +34,6 @@ A number of these variables cite [Webb et al. (1980)](https://doi.org/10.1002/qj
 
 Variables used in the REddyProc R package are listed in another [TSV file](data/reddyproc_ameriflux_bgc_variables.tsv) and are mapped to [AmeriFlux variables](https://ameriflux.lbl.gov/data/aboutdata/data-variables/).
 
-## Virtual environment
-
-Set-up a Conda virtual environment:
-
-```sh
-conda env create
-conda activate kerry-flux
-R -e "IRkernel::installspec()"
-```
-
-Note: On Windows, use `R.exe` instead of `R`.
-
-Install R packages:
-
-```r
-install.packages("REddyProc")
-```
-
 ## Raw and flux data formats
 
 The data (DAT) files come from Campbell Scientific dataloggers.
@@ -70,7 +52,7 @@ If the DAT file is binary, the output looks something like this:
 "Ux","Uy","Uz","co2","h2o","Ts","press","diag_csat","diag_irga"
 "m/s","m/s","m/s","mg/(m^3)","g/(m^3)","C","kPa","unitless","unitless"
 "Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp"
-"IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B"                                                       
+"IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B","IEEE4B"
 Pd�.�@������:D)�@ݿbA3M�B�$A
 `B��󷾩��D)�T@ݟ�A4Z�B�$@�A��      G�?�x�D)��@�v�A6��B�$@���=%�T@.D)��@ݞ�A3�!B�$@�A�����?y�_D)�h@�oA4�B��A��?Ұ!?|��D)��@ޢ�A=7BB��A
 �?�`B�p�D*�@�DA1�rB��@��@89Y�� �D*l@�*
@@ -98,6 +80,28 @@ Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-bas
 Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
 More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
 TOA5 files can be processed just like any other CSV file in R.
+
+## Notebooks
+
+Notebooks demonstrating the methods used can be found [here](docs/).
+
+## Installation
+
+Set-up a Conda virtual environment:
+
+```sh
+conda env create
+conda activate kerry-flux
+R -e "IRkernel::installspec()"
+```
+
+Note: On Windows, use `R.exe` instead of `R`.
+
+Install R packages:
+
+```r
+install.packages("REddyProc")
+```
 
 ## Further reading
 
