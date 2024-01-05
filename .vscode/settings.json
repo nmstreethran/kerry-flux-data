@@ -1,3 +1,4 @@
 {
-  "python.defaultInterpreterPath": "~/miniconda3/envs/R/bin/python"
+  "python.defaultInterpreterPath": "~/miniconda3/envs/R/bin/python",
+  "python.terminal.activateEnvInCurrentTerminal": true
 }
