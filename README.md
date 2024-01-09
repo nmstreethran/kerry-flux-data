@@ -17,7 +17,7 @@ IE-Kil (Killorglin)
 - Lies on sandstone bedrock
 - Located in a valley at an elevation 145-170 m above sea level
 - Composed of a large central pristine part (~220 ha), surrounded by disturbed peatland areas
-- Instruments: Campbell Scientific dataloggers, ...
+- Instruments: [Campbell Scientific](https://www.campbellsci.eu/) dataloggers, ...
 - Status: ...
 
 Source: [Sottocornola (2007)](https://www.ucc.ie/en/media/research/hydromet/SottocornolaThesis.2007.pdf)
@@ -29,19 +29,19 @@ The variables are listed [here](http://www.europe-fluxdata.eu/home/guidelines/ob
 They are also listed in a [TSV file](data/europe_fluxdata_variables.tsv) in the `data` folder.
 
 Variables for the [raw data](data/ts_data_variables.tsv) and [flux data](data/flux_variables.tsv) are also available in the `data` folder.
-These have been compiled from the data headers with additional descriptions from [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482) and [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263).
+These have been compiled from the data headers with additional descriptions from [Jaimes (2014)](https://scholarworks.utep.edu/open_etd/1263) and [Cantero et al. (2019)](https://doi.org/10.5281/zenodo.3187482).
 A number of these variables cite [Webb et al. (1980)](https://doi.org/10.1002/qj.49710644707).
 
-Variables used in the REddyProc R package are listed in another [TSV file](data/reddyproc_ameriflux_bgc_variables.tsv) and are mapped to [AmeriFlux variables](https://ameriflux.lbl.gov/data/aboutdata/data-variables/).
+Variables used in the [REddyProc R package](https://cran.r-project.org/package=REddyProc) are listed in another [TSV file](data/reddyproc_ameriflux_bgc_variables.tsv) and are mapped to [AmeriFlux variables](https://ameriflux.lbl.gov/data/aboutdata/data-variables/).
 
 ## Raw and flux data formats
 
 The data (DAT) files come from Campbell Scientific dataloggers.
 
-To view a DAT file's contents (first 10 lines):
+To view a DAT file's contents (first 10 lines), run the following:
 
 ```sh
-sed -n '1,10p' 'file.dat'
+sed -n '1,10p' 'filename.dat'
 ```
 
 If the DAT file is binary, the output looks something like this:
@@ -76,10 +76,11 @@ If the DAT file is a text file, the output looks something like this:
 "2014-12-22 11:47:39.8",761139398,0.5765,-0.9160001,1.22775,760.9031,8.796409,"NAN",12.12582,99.22072,0,11.70769,1.236716
 ```
 
+The first header row should tell us the format of the data, e.g. TOA5 or TOB3.
 Binary data are in the TOB3 (Table Oriented Binary 3) format, while the text-based data are in the TOA5 (Table Oriented ASCII 5) format.
 Binary data can be viewed and converted into TOA5 by installing the free [PC400](https://www.campbellsci.eu/pc400) software (Windows only; requires admin rights to install) from Campbell Scientific and using the Card Convert utility.
-More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html#PreparingrawfluxdataloggedbyaCampbellDataloggerforprocessing).
-TOA5 files can be processed just like any other CSV file in R.
+More information can be found in this [LI-COR EddyPro guide](https://www.licor.com/env/support/EddyPro/topics/processing-ascii-and-tob1-files.html).
+TOA5 files can be processed just like any other CSV file.
 
 ## Notebooks
 
@@ -87,7 +88,14 @@ Notebooks demonstrating the methods used can be found [here](docs/).
 
 ## Installation
 
-Set-up a Conda virtual environment:
+Clone this Git repository:
+
+```sh
+git clone https://github.com/nmstreethran/kerry-flux-data.git
+cd kerry-flux-data
+```
+
+Set-up a [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) virtual environment:
 
 ```sh
 conda env create
@@ -97,7 +105,7 @@ R -e "IRkernel::installspec()"
 
 Note: On Windows, use `R.exe` instead of `R`.
 
-Install R packages:
+Install [R](https://www.r-project.org/) packages:
 
 ```r
 install.packages("REddyProc")
