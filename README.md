@@ -103,7 +103,8 @@ conda activate kerry-flux
 R -e "IRkernel::installspec()"
 ```
 
-Note: On Windows, use `R.exe` instead of `R`.
+> [!NOTE]
+> On Windows, use `R.exe` instead of `R`.
 
 Install [R](https://www.r-project.org/) packages:
 
